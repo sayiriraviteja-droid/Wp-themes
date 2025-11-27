@@ -1,0 +1,77 @@
+# -------------------------------------
+# Core WordPress Files (Do NOT Track)
+# -------------------------------------
+/wp-admin/
+/wp-includes/
+
+# Allow these exceptions (required)
+!wp-admin/index.php
+!wp-includes/version.php
+
+# -------------------------------------
+# WP Content (Only track themes/plugins you edit)
+# -------------------------------------
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+
+# Exclude uploads (big files)
+wp-content/uploads/
+
+# Exclude cache folders
+wp-content/cache/
+wp-content/w3tc-config/
+wp-content/cache/*
+wp-content/backups/
+wp-content/backup-*/ 
+
+# Exclude advanced cache
+wp-content/advanced-cache.php
+
+# Logs
+*.log
+debug.log
+wp-content/debug.log
+
+# -------------------------------------
+# System / OS Files
+# -------------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------------
+# PHP / Composer
+# -------------------------------------
+vendor/
+composer.lock
+
+# -------------------------------------
+# Node / JS
+# -------------------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# -------------------------------------
+# Environment / Sensitive Files
+# -------------------------------------
+.env
+.env.local
+.env.production
+.env.development
+
+# wp-config (do not upload database credentials)
+wp-config.php
+wp-config-local.php
+wp-config-dev.php
+wp-config-staging.php
+wp-config-production.php
+
+# -------------------------------------
+# Misc
+# -------------------------------------
+*.zip
+*.tar.gz
+.sass-cache/
+.idea/
+.vscode/
